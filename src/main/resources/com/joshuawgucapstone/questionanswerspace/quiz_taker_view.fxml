@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.joshuawgucapstone.questionanswerspace.QuizTakerController">
+   <children>
+      <Label layoutX="235.0" layoutY="26.0" text="QUIZ TAKER">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="questionText" alignment="CENTER" layoutX="25.0" layoutY="94.0" prefHeight="63.0" prefWidth="565.0" text="question" textAlignment="CENTER" />
+      <Button fx:id="answerOne" layoutX="22.0" layoutY="188.0" mnemonicParsing="false" onAction="#next" prefHeight="86.0" prefWidth="273.0" text="q1" />
+      <Button fx:id="answerTwo" layoutX="319.0" layoutY="188.0" mnemonicParsing="false" onAction="#next" prefHeight="86.0" prefWidth="273.0" text="q2" />
+      <Button fx:id="answerThree" layoutX="22.0" layoutY="287.0" mnemonicParsing="false" onAction="#next" prefHeight="86.0" prefWidth="273.0" text="q3" />
+      <Button fx:id="answerFour" layoutX="319.0" layoutY="287.0" mnemonicParsing="false" onAction="#next" prefHeight="86.0" prefWidth="273.0" text="q4" />
+      <Button fx:id="nextButton" layoutX="274.0" layoutY="318.0" mnemonicParsing="false" onAction="#next" text="NEXT" />
+      <TextField fx:id="entryText" layoutX="175.0" layoutY="265.0" prefHeight="44.0" prefWidth="266.0" promptText="Enter Your Answer Here..." />
+      <Label fx:id="intro" alignment="CENTER" layoutX="18.0" layoutY="94.0" prefHeight="163.0" prefWidth="573.0" text="intro">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="startButton" layoutX="319.0" layoutY="317.0" mnemonicParsing="false" onAction="#next" prefHeight="25.0" prefWidth="92.0" text="START QUIZ" />
+      <Button fx:id="exitButton" layoutX="205.0" layoutY="317.0" mnemonicParsing="false" onAction="#exit" text="CANCEL" />
+   </children>
+</AnchorPane>
